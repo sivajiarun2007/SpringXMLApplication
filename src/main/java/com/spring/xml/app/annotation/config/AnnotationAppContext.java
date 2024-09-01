@@ -9,7 +9,8 @@ public class AnnotationAppContext {
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext ctxt = new AnnotationConfigApplicationContext(AppConfig.class);
+//		ApplicationContext ctxt = new AnnotationConfigApplicationContext(AppConfig.class);
+		ApplicationContext ctxt = new AnnotationConfigApplicationContext(AppConfig2.class);
 		
 		ctxt.getBean("course", Course.class).selectCourse();
 		
