@@ -8,7 +8,7 @@ public class App
     public static void main( String[] args )
     {
     	ApplicationContext context = new ClassPathXmlApplicationContext("springAppContext.xml");
-    	Course course = (Course) context.getBean("course");
+    	Course course =  context.getBean("course", Course.class);
     	course.selectCourse();
     }
 }
